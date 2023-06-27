@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileFilter;
 import java.io.FilenameFilter;
 /**
- * @Author:
+ * @Author:DuanQianQain
  * @Data:2023/06/27
  * @Description:遍历文件夹取出pdf和word
  */
