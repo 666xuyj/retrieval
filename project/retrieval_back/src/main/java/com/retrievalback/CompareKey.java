@@ -45,7 +45,6 @@ public class CompareKey {
                     }
                     String tmp = "行号"+lineNumber+"\t"+line;
                     bck.setInfo(tmp);
-
                 }
             }
             if(bck.getPath() != null){
