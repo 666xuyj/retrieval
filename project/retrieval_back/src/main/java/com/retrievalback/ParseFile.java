@@ -7,7 +7,6 @@ import org.apache.poi.POIXMLTextExtractor;
 import org.apache.poi.hwpf.extractor.WordExtractor;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -16,6 +15,7 @@ import java.io.InputStream;
  * @Data:2023/06/27
  * @Description:解析word和pdf
  */
+
 public class ParseFile {
     /**
      * 解析word和pdf，由于word有两个版本所以多了一个判断
