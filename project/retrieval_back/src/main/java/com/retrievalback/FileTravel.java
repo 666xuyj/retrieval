@@ -27,7 +27,6 @@ public class FileTravel {
      */
     public void traverse(String path) {
         File file = new File(path);
-
         if(file.isDirectory()){
             File[] files = file.listFiles(new FilenameFilter() {
                 @Override
