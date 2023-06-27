@@ -1,6 +1,6 @@
 package com.retrievalback.Result;
 /**
- * @Author:
+ * @Author:chenjinye
  * @Data:2023/6/26
  * @Description: 返回的结果统一封装
  */
