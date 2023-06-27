@@ -12,7 +12,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 /**
- * @Author:
+ * @Author:DuanQianQian
  * @Data:2023/06/27
  * @Description:解析word和pdf
  */
