@@ -1,5 +1,4 @@
 package com.retrievalback.entity;
-
 import org.apache.ibatis.jdbc.Null;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
