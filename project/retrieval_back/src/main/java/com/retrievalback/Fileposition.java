@@ -3,7 +3,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 /**
- * @Author:
+ * @Author:DuanQianQian
  * @Data:2023/06/27
  * @Description:创建position实体类，文件名和文件位置
  */
