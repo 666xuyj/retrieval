@@ -13,7 +13,6 @@ public class Fileposition {
     private Integer id;
     private String filename;
     private String positioncol;
-
     public Integer getId() {
         return id;
     }
