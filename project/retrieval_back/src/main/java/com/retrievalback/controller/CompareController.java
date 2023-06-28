@@ -26,7 +26,7 @@ public class CompareController {
                 return new Result(201, "fail", "nnn");
             }
         } catch (Exception e) {
-            // 异常处理代码代码
+            // 异常处理代码
             e.printStackTrace();
             return new Result(500, "error", "服务器内部错误");
         }
