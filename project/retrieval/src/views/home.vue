@@ -62,3 +62,12 @@
     </el-container>
   </el-container>
 </template>
+
+<style>
+.custom-tree-node > span {
+  padding-left: 5px;
+}
+.input-suffix{
+  padding-bottom: 50px;
+}
+</style>
