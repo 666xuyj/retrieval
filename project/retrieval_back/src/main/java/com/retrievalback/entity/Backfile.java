@@ -3,6 +3,11 @@ package com.retrievalback.entity;
 import java.util.ArrayList;
 import java.util.Map;
 
+/**
+ * @Author:
+ * @Data:2023/06/28
+ * @Description:
+ */
 public class Backfile {
     private String path;
     private ArrayList<String> infos = new ArrayList<String>();

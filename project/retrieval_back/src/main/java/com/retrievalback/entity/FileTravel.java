@@ -5,12 +5,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.FilenameFilter;
+import java.util.ArrayList;
+
 /**
  * @Author:
  * @Data:2023/06/27
  * @Description:遍历文件夹取出pdf和word
  */
 public class FileTravel {
+    private boolean isTraversed = false;
     private final PositionMapper positionMapper;
 
     /**
@@ -27,7 +30,9 @@ public class FileTravel {
      */
     public void traverse(String path) {
         File file = new File(path);
-
+        if(!file.exists()){
+            return;
+        }
         if(file.isDirectory()){
             File[] files = file.listFiles(new FilenameFilter() {
                 @Override
@@ -56,6 +61,36 @@ public class FileTravel {
             Fileposition fileposition = new Fileposition(file.getName(), file.getAbsolutePath());
             this.positionMapper.insert(fileposition);
         }
+        this.isTraversed = true;
+    }
+
+    /**
+     * 判断遍历文件是否已经结束
+     *
+     */
+    public boolean getIsTraversed() {
+        return isTraversed;
+    }
+
+    /**
+     * 如果当前文件是目录，则输出目录路径
+     * @param file
+     * @return
+     */
+    public ArrayList<String> traverse(File file) {
+        ArrayList<String> filedir = new ArrayList<>();
+        if (file.isDirectory()) {
+            filedir.add(file.getAbsolutePath());
+            File[] children = file.listFiles();
+            if (children != null) {
+                for (File child : children) {
+                    if (child.isDirectory()) {
+                        filedir.add(child.getAbsolutePath());
+                    }
+                }
+            }
+        }
+        return  filedir;
     }
 
 }

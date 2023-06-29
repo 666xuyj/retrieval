@@ -4,7 +4,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 /**
- * @Author:x
+ * @Author:
  * @Data:2023/6/26
  * @Description: 返回前端的是json格式
  */
